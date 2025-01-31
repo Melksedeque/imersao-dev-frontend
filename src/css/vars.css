@@ -1,3 +1,15 @@
 :root {
+  /**
+    FONTE
+  */
   --fonte: "DM Sans", sans-serif;
+
+  /**
+    COR
+  */
+  --branco: #ffffff;
+  --cinza-claro: #b3b3b3;
+  --cinza-medio: #242424;
+  --cinza-escuro: #121212;
+  --preto: #000000;
 }

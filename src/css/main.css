@@ -1,0 +1,105 @@
+div.main-container {
+  max-width: 80vw;
+  height: 100vh;
+  margin: 0 56px 0 320px;
+  padding: 12px;
+}
+
+header nav.header__navigation,
+section.conteudo-principal {
+  align-items: center;
+  background-color: var(--cinza-escuro);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+header nav.header__navigation .navigation {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav.header__navigation .navigation .btn-arrow-left {
+  margin-right: 1.25rem;
+}
+
+header nav.header__navigation .navigation .btn-arrow-left,
+header nav.header__navigation .navigation .btn-arrow-right {
+  align-items: center;
+  background: var(--bg-arrow-color);
+  border: 0 none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  height: 32px;
+  width: 32px;
+}
+
+header nav.header__navigation .header__search {
+  align-items: center;
+  background-color: var(--cinza-medio);
+  border: 1px solid transparent;
+  border-radius: 500px;
+  display: flex;
+  height: 48px;
+  padding: 0 24px;
+  width: 364px;
+}
+header nav.header__navigation .header__search img {
+  height: 16px;
+  width: 16px;
+}
+header nav.header__navigation .header__search input {
+  border: 0 none;
+  background-color: transparent;
+  color: var(--branco);
+  height: 100%;
+  outline: none;
+  overflow: hidden;
+  padding: 0 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+header nav.header__navigation .header__login {
+  align-items: center;
+  display: flex;
+  gap: 15px;
+}
+
+header nav.header__navigation .header__login .btn {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  color: var(--cinza-claro);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  height: 42px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+header nav.header__navigation .header__login .btn:hover {
+  color: var(--branco);
+}
+
+header nav.header__navigation .header__login .btn-login {
+  color: var(--preto);
+  background-color: var(--branco);
+  width: 100px;
+}
+
+header nav.header__navigation .header__login .btn-login:hover {
+  background-color: transparent;
+  border-color: var(--branco);
+}
+
+section.conteudo-principal {
+  flex-direction: column;
+  margin-top: 12px;
+}

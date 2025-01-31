@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #fafafa;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #ffffff;
+        border-bottom: 1px solid #dbdbdb;
+        padding: 10px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+      }
+      .header-content {
+        max-width: 975px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo {
+        height: 29px;
+      }
+      .search-bar {
+        background-color: #efefef;
+        border-radius: 8px;
+        border: none;
+        padding: 7px 16px;
+        font-size: 14px;
+        width: 215px;
+      }
+      .nav-icons {
+        display: flex;
+        gap: 22px;
+      }
+      .nav-icon {
+        width: 24px;
+        height: 24px;
+      }
+      main {
+        max-width: 935px;
+        margin: 85px auto 0;
+        padding: 0 20px;
+      }
+      .profile-header {
+        display: flex;
+        margin-bottom: 44px;
+      }
+      .profile-picture {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-right: 100px;
+      }
+      .profile-info {
+        display: flex;
+        flex-direction: column;
+      }
+      .profile-username {
+        font-size: 28px;
+        font-weight: 300;
+        margin-bottom: 20px;
+      }
+      .profile-stats {
+        display: flex;
+        gap: 40px;
+        margin-bottom: 20px;
+      }
+      .profile-stat {
+        font-size: 16px;
+      }
+      .profile-name {
+        font-weight: bold;
+        font-size: 16px;
+      }
+      .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 28px;
+      }
+      .photo-item {
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+        position: relative;
+      }
+      .photo-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .photo-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out;
+      }
+      .photo-item:hover .photo-overlay {
+        opacity: 1;
+      }
+      .photo-stats {
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        display: flex;
+        gap: 30px;
+      }
+      .photo-stat {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+      }
+      .photo-stat-icon {
+        width: 19px;
+        height: 19px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <img
+          src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
+          alt="Instagram"
+          class="logo"
+        />
+        <input type="text" placeholder="Pesquisar" class="search-bar" />
+        <div class="nav-icons">
+          <img
+            src="https://img.icons8.com/fluency-systems-regular/48/000000/home.png"
+            alt="Home"
+            class="nav-icon"
+          />
+          <img
+            src="https://img.icons8.com/fluency-systems-regular/48/000000/facebook-messenger.png"
+            alt="Messages"
+            class="nav-icon"
+          />
+          <img
+            src="https://img.icons8.com/fluency-systems-regular/48/000000/plus-math.png"
+            alt="Add Post"
+            class="nav-icon"
+          />
+          <img
+            src="https://img.icons8.com/fluency-systems-regular/48/000000/compass.png"
+            alt="Explore"
+            class="nav-icon"
+          />
+          <img
+            src="https://img.icons8.com/fluency-systems-regular/48/000000/like.png"
+            alt="Notifications"
+            class="nav-icon"
+          />
+          <img
+            src="https://via.placeholder.com/24"
+            alt="Profile"
+            class="nav-icon"
+            style="border-radius: 50%"
+          />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="profile-header">
+        <img
+          src="https://via.placeholder.com/150"
+          alt="Profile Picture"
+          class="profile-picture"
+        />
+        <div class="profile-info">
+          <h1 class="profile-username">melksedeque_silva</h1>
+          <div class="profile-stats">
+            <span class="profile-stat"><strong>100</strong> publicações</span>
+            <span class="profile-stat"><strong>1.000</strong> seguidores</span>
+            <span class="profile-stat"><strong>500</strong> seguindo</span>
+          </div>
+          <div class="profile-name">Melksedeque de Souza Silva</div>
+        </div>
+      </div>
+      <div class="photo-grid">
+        <!-- Repita este bloco para cada foto -->
+        <div class="photo-item">
+          <img src="https://via.placeholder.com/300" alt="Instagram post" />
+          <div class="photo-overlay">
+            <div class="photo-stats">
+              <span class="photo-stat">
+                <img
+                  src="https://img.icons8.com/ios-glyphs/30/ffffff/like.png"
+                  alt="Likes"
+                  class="photo-stat-icon"
+                />
+                1.234
+              </span>
+              <span class="photo-stat">
+                <img
+                  src="https://img.icons8.com/ios-glyphs/30/ffffff/comments.png"
+                  alt="Comments"
+                  class="photo-stat-icon"
+                />
+                56
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- Fim do bloco de foto -->
+      </div>
+    </main>
+    <script>
+      // Simula o carregamento de mais fotos
+      const photoGrid = document.querySelector(".photo-grid");
+      for (let i = 0; i < 11; i++) {
+        const photoItem = document.querySelector(".photo-item").cloneNode(true);
+        photoGrid.appendChild(photoItem);
+      }
+    </script>
+  </body>
+</html>

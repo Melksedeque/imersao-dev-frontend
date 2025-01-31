@@ -100,6 +100,44 @@ header nav.header__navigation .header__login .btn-login:hover {
 }
 
 section.conteudo-principal {
+  align-items: flex-start;
   flex-direction: column;
   margin-top: 12px;
+  padding: 20px;
+}
+
+section.conteudo-principal .text {
+  color: var(--branco);
+  font: 700 16px var(--fonte);
+}
+
+section.conteudo-principal .text h2 {
+  font-size: 32px;
+  margin: 12px 0 30px;
+}
+
+section.conteudo-principal .text h3 {
+  font-size: 24px;
+}
+
+section.conteudo-principal .offer__list {
+  margin-top: 12px;
+  max-height: 43vh;
+  overflow-y: auto;
+}
+
+section.conteudo-principal .offer__list .cards {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  margin-bottom: 16px;
+}
+
+section.conteudo-principal .offer__list .cards a.card {
+  border-radius: 8px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 220px;
 }

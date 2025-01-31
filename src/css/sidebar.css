@@ -31,7 +31,7 @@ nav.sidebar__navigation,
 nav.sidebar__library {
   background-color: var(--cinza-escuro);
   border-radius: 8px;
-  margin: 0 0 10px;
+  margin: 0 0 12px;
   padding: 16px;
 }
 

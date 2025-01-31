@@ -52,4 +52,137 @@ nav.sidebar__navigation .logo img {
 }
 
 nav.sidebar__library {
+  background-color: #121212;
+  border-radius: 8px;
+  color: #b3b3b3;
+  display: flex;
+  flex-flow: column nowrap;
+  font: 600 14px "DM Sans", sans-serif;
+  justify-content: space-between;
+  margin: 10px 0 0;
+  padding: 4px 8px;
+}
+
+nav.sidebar__library ul.biblioteca {
+  margin: 0;
+  padding: 0;
+}
+
+nav.sidebar__library ul.biblioteca li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav.sidebar__library ul.biblioteca li a {
+  background-color: transparent;
+  color: #b3b3b3;
+  border: 0 none;
+  display: flex;
+  font: 700 14px "DM Sans", sans-serif;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  padding: 20px 10px;
+}
+
+nav.sidebar__library ul.biblioteca li a:hover {
+  color: #ffffff;
+}
+
+nav.sidebar__library ul.biblioteca li a i {
+  font-size: 20px;
+  margin: -1px 15px 0 0;
+}
+
+nav.sidebar__library ul.biblioteca li i.fa-plus {
+  cursor: pointer;
+  padding: 0 15px;
+}
+
+nav.sidebar__library ul.biblioteca li i.fa-plus:hover {
+  color: #ffffff;
+}
+
+div.criar-playlist {
+  align-items: flex-start;
+  background-color: #242424;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  margin: 8px 0;
+  padding: 16px 20px;
+}
+
+div.criar-playlist .playlist__content {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  gap: 5px;
+}
+
+div.criar-playlist .playlist__content h4 {
+  font-weight: 700;
+}
+
+div.criar-playlist .playlist__content p {
+  font-size: 12px;
+}
+
+div.criar-playlist button {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  color: #000000;
+  cursor: pointer;
+  display: flex;
+  font: 700 14px "DM Sans", sans-serif;
+  justify-content: center;
+  padding: 10px;
+  transition: all 0.25s ease;
+  width: 120px;
+}
+
+div.criar-playlist button:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+div.cookies {
+  margin: 25px 20px;
+}
+
+div.cookies a {
+  color: #b3b3b3;
+  font: 500 10px "DM Sans", sans-serif;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+div.cookies a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+div.languages button {
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #878787;
+  border-radius: 50px;
+  color: #ffffff;
+  cursor: pointer;
+  font: 700 14px "DM Sans", sans-serif;
+  margin: 8px;
+  padding: 8px;
+  transition: all 0.25s ease;
+  width: 180px;
+}
+
+div.languages button:hover {
+  background-color: #ffffff;
+  color: #121212;
 }

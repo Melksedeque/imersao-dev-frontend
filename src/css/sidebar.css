@@ -19,7 +19,6 @@
 
 .sidebar nav ul li a {
   color: #b3b3b3;
-  font: 600 14px "DM Sans", sans-serif;
   text-decoration: none;
   transition: all 0.25s ease;
 }
@@ -53,7 +52,6 @@ nav.sidebar__library {
   color: #b3b3b3;
   display: flex;
   flex-flow: column nowrap;
-  font: 600 14px "DM Sans", sans-serif;
   justify-content: space-between;
   margin: 10px 0 0;
   padding: 4px 8px;
@@ -75,7 +73,7 @@ nav.sidebar__library ul.biblioteca li a {
   color: #b3b3b3;
   border: 0 none;
   display: flex;
-  font: 700 14px "DM Sans", sans-serif;
+  font-weight: 700;
   margin: 0;
   text-align: center;
   text-decoration: none;
@@ -136,7 +134,7 @@ div.criar-playlist button {
   color: #000000;
   cursor: pointer;
   display: flex;
-  font: 700 14px "DM Sans", sans-serif;
+  font-weight: 700;
   justify-content: center;
   padding: 10px;
   transition: all 0.25s ease;
@@ -154,7 +152,7 @@ div.cookies {
 
 div.cookies a {
   color: #b3b3b3;
-  font: 500 10px "DM Sans", sans-serif;
+  font: 500 10px var(--fonte);
   text-decoration: none;
   transition: all 0.25s ease;
 }
@@ -171,7 +169,7 @@ div.languages button {
   border-radius: 50px;
   color: #ffffff;
   cursor: pointer;
-  font: 700 14px "DM Sans", sans-serif;
+  font-weight: 700;
   margin: 8px;
   padding: 8px;
   transition: all 0.25s ease;

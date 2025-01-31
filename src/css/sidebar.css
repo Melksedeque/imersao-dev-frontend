@@ -18,25 +18,25 @@
 }
 
 .sidebar nav ul li a {
-  color: #b3b3b3;
+  color: var(--cinza-claro);
   text-decoration: none;
   transition: all 0.25s ease;
 }
 
 .sidebar nav ul li a:hover {
-  color: #ffffff;
+  color: var(--branco);
 }
 
 nav.sidebar__navigation,
 nav.sidebar__library {
-  background-color: #121212;
+  background-color: var(--cinza-escuro);
   border-radius: 8px;
   margin: 0 0 10px;
   padding: 16px;
 }
 
 nav.sidebar__navigation .logo {
-  background-color: #121212;
+  background-color: var(--cinza-escuro);
   border-radius: 8px;
   display: flex;
   padding: 8px;
@@ -47,9 +47,9 @@ nav.sidebar__navigation .logo img {
 }
 
 nav.sidebar__library {
-  background-color: #121212;
+  background-color: var(--cinza-escuro);
   border-radius: 8px;
-  color: #b3b3b3;
+  color: var(--cinza-claro);
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
@@ -70,7 +70,7 @@ nav.sidebar__library ul.biblioteca li {
 
 nav.sidebar__library ul.biblioteca li a {
   background-color: transparent;
-  color: #b3b3b3;
+  color: var(--cinza-claro);
   border: 0 none;
   display: flex;
   font-weight: 700;
@@ -82,7 +82,7 @@ nav.sidebar__library ul.biblioteca li a {
 }
 
 nav.sidebar__library ul.biblioteca li a:hover {
-  color: #ffffff;
+  color: var(--branco);
 }
 
 nav.sidebar__library ul.biblioteca li a i {
@@ -96,12 +96,12 @@ nav.sidebar__library ul.biblioteca li i.fa-plus {
 }
 
 nav.sidebar__library ul.biblioteca li i.fa-plus:hover {
-  color: #ffffff;
+  color: var(--branco);
 }
 
 div.criar-playlist {
   align-items: flex-start;
-  background-color: #242424;
+  background-color: var(--cinza-medio);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -112,7 +112,7 @@ div.criar-playlist {
 }
 
 div.criar-playlist .playlist__content {
-  color: #ffffff;
+  color: var(--branco);
   display: flex;
   flex-direction: column;
   font-weight: 500;
@@ -128,10 +128,10 @@ div.criar-playlist .playlist__content p {
 }
 
 div.criar-playlist button {
-  background-color: #ffffff;
-  border: 1px solid #ffffff;
+  background-color: var(--branco);
+  border: 1px solid var(--branco);
   border-radius: 50px;
-  color: #000000;
+  color: var(--preto);
   cursor: pointer;
   display: flex;
   font-weight: 700;
@@ -143,7 +143,7 @@ div.criar-playlist button {
 
 div.criar-playlist button:hover {
   background-color: transparent;
-  color: #ffffff;
+  color: var(--branco);
 }
 
 div.cookies {
@@ -151,23 +151,23 @@ div.cookies {
 }
 
 div.cookies a {
-  color: #b3b3b3;
+  color: var(--cinza-claro);
   font: 500 10px var(--fonte);
   text-decoration: none;
   transition: all 0.25s ease;
 }
 
 div.cookies a:hover {
-  color: #ffffff;
+  color: var(--branco);
   text-decoration: underline;
 }
 
 div.languages button {
   align-items: center;
   background-color: transparent;
-  border: 1px solid #878787;
+  border: 1px solid var(--cinza-claro);
   border-radius: 50px;
-  color: #ffffff;
+  color: var(--branco);
   cursor: pointer;
   font-weight: 700;
   margin: 8px;
@@ -177,6 +177,6 @@ div.languages button {
 }
 
 div.languages button:hover {
-  background-color: #ffffff;
-  color: #121212;
+  background-color: var(--branco);
+  color: var(--cinza-escuro);
 }

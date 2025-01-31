@@ -1,4 +1,4 @@
 body {
-  background-color: black;
+  background-color: var(--preto);
   font: 600 14px var(--fonte);
 }

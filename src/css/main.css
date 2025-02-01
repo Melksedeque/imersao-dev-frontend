@@ -6,7 +6,7 @@ div.main-container {
 }
 
 header nav.header__navigation,
-section.conteudo-principal {
+section.playlist-container {
   align-items: center;
   background-color: var(--cinza-escuro);
   border-radius: 8px;
@@ -99,34 +99,42 @@ header nav.header__navigation .header__login .btn-login:hover {
   border-color: var(--branco);
 }
 
-section.conteudo-principal {
+section.playlist-container {
   align-items: flex-start;
   flex-direction: column;
   margin-top: 12px;
   padding: 20px;
 }
 
-section.conteudo-principal .text {
+section.playlist-container .text {
   color: var(--branco);
   font: 700 16px var(--fonte);
 }
 
-section.conteudo-principal .text h2 {
+section.playlist-container .text h2 {
   font-size: 32px;
   margin: 12px 0 30px;
 }
 
-section.conteudo-principal .text h3 {
+section.playlist-container .text h3 {
   font-size: 24px;
 }
 
-section.conteudo-principal .offer__list {
+section.playlist-container .offer__list {
   margin-top: 12px;
   max-height: 43vh;
   overflow-y: auto;
 }
 
-section.conteudo-principal .offer__list .cards {
+section.playlist-container .offer__list::-webkit-scrollbar {
+  width: 1px;
+}
+
+section.playlist-container .offer__list::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+section.playlist-container .offer__list .cards {
   display: grid;
   gap: 16px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -134,7 +142,7 @@ section.conteudo-principal .offer__list .cards {
   margin-bottom: 16px;
 }
 
-section.conteudo-principal .offer__list .cards a.card {
+section.playlist-container .offer__list .cards a.card {
   border-radius: 8px;
   height: 200px;
   overflow: hidden;

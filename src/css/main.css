@@ -146,6 +146,7 @@ section.playlist-container .offer__list .cards {
 
 section.playlist-container .offer__list .cards a.card {
   border-radius: 8px;
+  cursor: pointer;
   height: 200px;
   overflow: hidden;
   position: relative;

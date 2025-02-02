@@ -3,8 +3,21 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
-@media screen and (max-width: 1015px) {
+
+@media screen and (max-width: 1340px) {
+  section.playlist-container .offer__list .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1110px) {
   section.playlist-container .offer__list .cards {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  section.playlist-container .offer__list .cards {
+    grid-template-columns: 1fr;
   }
 }

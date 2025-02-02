@@ -3,6 +3,10 @@ body {
   font: 600 14px var(--fonte);
 }
 
+.hidden {
+  display: none;
+}
+
 /* COLORAÇÃO DOS CARDS */
 .card1 {
   background-color: rgba(0, 100, 80, 0.8);

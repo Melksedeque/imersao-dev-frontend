@@ -151,3 +151,20 @@ section.playlist-container .offer__list .cards a.card {
   position: relative;
   width: 220px;
 }
+
+section.playlist-container .offer__list .cards a.card img {
+  bottom: 0;
+  max-width: 110px;
+  position: absolute;
+  right: 0;
+  transform: rotate(25deg) translate(18%, -2%);
+}
+
+section.playlist-container .offer__list .cards a.card span {
+  color: var(--branco);
+  font-size: 24px;
+  font-weight: 700;
+  padding: 16px;
+  position: absolute;
+  width: 75%;
+}

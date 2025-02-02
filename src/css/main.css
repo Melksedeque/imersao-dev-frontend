@@ -150,6 +150,7 @@ section.playlist-container .offer__list .cards a.card {
   height: 200px;
   overflow: hidden;
   position: relative;
+  transition: all 0.25s ease;
   width: 220px;
 }
 

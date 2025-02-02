@@ -158,6 +158,7 @@ section.playlist-container .offer__list .cards a.card img {
   position: absolute;
   right: 0;
   transform: rotate(25deg) translate(18%, -2%);
+  transition: all 0.25s ease;
 }
 
 section.playlist-container .offer__list .cards a.card span {
@@ -167,4 +168,12 @@ section.playlist-container .offer__list .cards a.card span {
   padding: 16px;
   position: absolute;
   width: 75%;
+}
+
+section.playlist-container .offer__list .cards a.card:hover img {
+  bottom: 0;
+  max-width: 110px;
+  position: absolute;
+  right: 0;
+  transform: rotate(25deg) translate(18%, -2%) scale(1.2);
 }

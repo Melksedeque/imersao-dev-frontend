@@ -136,7 +136,7 @@ const apiUrl = "http://seu-endpoint-api.com/artists";
 
 ## Projeto ao Vivo
 
-[Link do Projeto ao vivo]()
+[Link do Projeto ao vivo](https://melksedeque.github.io/imersao-dev-frontend/)
 
 ## Fluxo de Dados
 

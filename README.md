@@ -153,7 +153,7 @@ A aplicação segue um fluxo de dados simples para a funcionalidade de busca de 
 [Entrada do Usuário] -> [Listener de Eventos] -> [Requisição à API] -> [Busca de Dados]
                                                                            |
                                                                            v
-[Atualização da Exibição] <- [Manipulação do DOM] <- [Filtragem de Dados]
+[Atualização da Exibição]  <-  [Manipulação do DOM]  <-  [Filtragem de Dados]
 ```
 
 _Nota: Atualmente, a API retorna todos os artistas, e a filtragem é feita no lado do cliente. Para conjuntos de dados maiores, considere implementar a filtragem no lado do servidor para melhorar o desempenho._

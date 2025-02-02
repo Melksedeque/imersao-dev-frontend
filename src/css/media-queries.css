@@ -1,4 +1,10 @@
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1920px) {
+  section.playlist-container .offer__list .cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1580px) {
   section.playlist-container .offer__list .cards {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }

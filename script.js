@@ -1,9 +1,10 @@
 const searchInput = document.getElementById("search-input");
 const resultArtist = document.getElementById("result-artist");
 const resultPlaylist = document.getElementById("result-playlists");
+const apiUrl = "http://localhost:3000/artists";
 
 function requestApi(searchTerm) {
-  const url = `http://localhost:3000/artists?name_like=${searchTerm}`;
+  const url = `${apiUrl}?name_like=${searchTerm}`;
   fetch(url)
     .then((response) => response.json())
     .then((data) => {

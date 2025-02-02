@@ -10,7 +10,6 @@ function requestApi(searchTerm) {
       const filteredResults = data.filter((artist) =>
         artist.name.toLowerCase().includes(searchTerm)
       );
-      console.log(filteredResults);
       displayResults(filteredResults);
     });
 }

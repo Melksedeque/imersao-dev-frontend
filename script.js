@@ -4,12 +4,14 @@ const resultPlaylist = document.getElementById("result-playlists");
 const apiUrl = "http://localhost:3000/artists";
 
 function requestApi(searchTerm) {
-  const url = `${apiUrl}?name_like=${searchTerm}`;
-  fetch(url)
+  fetch(apiUrl)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
-      displayResults(data);
+      const filteredResults = data.filter((artist) =>
+        artist.name.toLowerCase().includes(searchTerm)
+      );
+      console.log(filteredResults);
+      displayResults(filteredResults);
     });
 }
 
